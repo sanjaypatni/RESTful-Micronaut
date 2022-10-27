@@ -6,6 +6,8 @@ import java.util.List;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.concurrent.atomic.AtomicInteger;
+import javax.inject.Singleton;
+@Singleton
 public class MessageService {
 static private Map<Integer, Message> messageRepo = new HashMap<Integer, Message>();
 static private AtomicInteger idCounter = new AtomicInteger();

@@ -2,8 +2,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>example.micronaut</groupId>
-  <artifactId>micronautguide</artifactId>
+  <groupId>com.rest</groupId>
+  <artifactId>quote</artifactId>
   <version>0.1</version>
   <packaging>${packaging}</packaging>
 
@@ -15,7 +15,7 @@
 
   <properties>
     <packaging>jar</packaging>
-    <jdk.version>1.8</jdk.version>
+    <jdk.version>11</jdk.version>
     <micronaut.version>3.4.3</micronaut.version>
     <micronaut.data.version>3.3.0</micronaut.data.version>
     <exec.mainClass>com.rest.Application</exec.mainClass>
@@ -155,8 +155,8 @@
             </path>
           </annotationProcessorPaths>
           <compilerArgs>
-            <arg>-Amicronaut.processing.group=example.micronaut</arg>
-            <arg>-Amicronaut.processing.module=micronautguide</arg>
+            <arg>-Amicronaut.processing.group=com.rest</arg>
+            <arg>-Amicronaut.processing.module=quote</arg>
           </compilerArgs>
         </configuration>
       </plugin>

@@ -1,0 +1,28 @@
+micronaut:
+  application:
+    name: smartOven
+  executors:
+    scheduled:
+      core-pool-size: 30
+      parralelism: 10
+      n-threads: 8
+
+lights:
+  default:
+    color: blue
+    dim: 80
+    enabled: true
+
+sensor:
+  thresholds:
+    temp       :   550
+    humidity   :    95
+    fan-speed  :  1500
+
+updates:
+  one:
+    url: https://updates.one
+  two:
+    url: https://updates.two
+  three:
+    url: https://updates.three

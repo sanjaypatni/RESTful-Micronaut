@@ -1,7 +1,0 @@
-micronaut:
-  application:
-    name: smartOven
-
-safety:
-  switch:
-    enabled: true
